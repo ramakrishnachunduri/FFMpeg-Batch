@@ -1,0 +1,1 @@
+for /f "tokens=*" %%a in ('dir /b /s *.avi') do ffmpeg -i "%%a" -g 250 -sameq "%%a.mp4"
