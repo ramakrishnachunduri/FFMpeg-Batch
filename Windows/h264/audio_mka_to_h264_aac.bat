@@ -1,0 +1,1 @@
+for /f "tokens=*" %%a in ('dir /b /s *.mka') do ffmpeg -i "%%a" -acodec aac -strict experimental "%%~na.aac"
