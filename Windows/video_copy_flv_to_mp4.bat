@@ -1,1 +1,0 @@
-for /f "tokens=*" %%a in ('dir /b /s *.flv') do ffmpeg -i "%%a" -vcodec copy -acodec copy "%%~na.mp4"
