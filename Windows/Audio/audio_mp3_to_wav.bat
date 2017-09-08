@@ -1,0 +1,1 @@
+for /f "tokens=*" %%a in ('dir /b /s *.mp3') do ffmpeg -i "%%a" "%%~na.wav"
