@@ -6,5 +6,5 @@ rem following line is seconds to cut
 set /a "_durS-=30"
 set "_newduration=%_durS%.%_durMS%"
 set "_output=%~n1"
-md trimmed
-ffmpeg -ss 0 -i %1 -t %_newduration% -c copy "trimmed\%_output%.mp4"
+md trimmed_end
+ffmpeg -ss 0 -i %1 -t %_newduration% -c copy "trimmed_end\%_output%.mp4"
