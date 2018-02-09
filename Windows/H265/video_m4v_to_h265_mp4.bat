@@ -1,0 +1,1 @@
+for /f "tokens=*" %%a in ('dir /b /s *.m4v') do ffmpeg -i "%%a" -vcodec libx265 "%%~pna.mp4"
